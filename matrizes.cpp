@@ -18,12 +18,10 @@ int main () {
     int colunaJogar=0;
     bool jogou = false;
 
-
     do{
         mostraTabuleiro(tabuleiro);
         colunaJogar = pedePecaJogador();
         jogou = colocaPecaTabuleiro("X", colunaJogar,tabuleiro);
-
 
     } while (ganhouJogo(quemGanhou, tabuleiro) && !tabuleiroCheio(tabuleiro));
 
@@ -38,11 +36,10 @@ bool mostraTabuleiro(string arr[LINHAS] [COLUNAS]) {
     arr[0][1]= "a";*/
 }
 
-
-
 int pedePecaJogador(){
     return 0;
 }
+
 bool colocaPecaTabuleiro (string peca,int coluna, string arr[LINHAS][COLUNAS]){
     return false;
 }
@@ -53,5 +50,5 @@ bool tabuleiroCheio (string arr[LINHAS][COLUNAS]){
 
 bool ganhouJogo (int &quemGanhou, string arr[LINHAS][COLUNAS]){
     return false;
-}
+}}
 
